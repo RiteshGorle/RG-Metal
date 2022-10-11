@@ -1,0 +1,308 @@
+/***********************************/
+/*      SECTION 01: HEADER         */
+/***********************************/
+
+.menu {
+  width: 35px;
+  height: 5px;
+  background-color: black;
+  margin: 6px 0;
+}
+
+
+.top-left {
+  position: absolute;
+  top: 16px;
+  left: 32px;
+  
+}
+
+.top-left h1 {
+  font-size: 60px;
+  font-weight: 900;
+}
+
+.first-img {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+
+/***********************************/
+/*  SECTION 02: HEADING AND GRID   */
+/***********************************/
+
+.main-head h3
+{ color: red; }
+
+.main-head h1
+{ font-size: 60px;}
+
+
+
+.layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.para {
+  padding: 2%;
+  margin-top: 130px;
+}
+
+@media(max-width: 400px){
+  .layout {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+
+/*************** THREE SECTIONS ********************/
+
+
+.THREE{
+  display: flex;
+  flex-direction: row ;
+}
+
+
+.THREE h1{
+  text-align: center;
+  font-size: 60px;
+}
+
+
+
+div .sec-one p, .sec-two p, .sec-three p{
+  display: flex;
+  color: orange;
+  justify-content: center;
+  color: black;
+}
+
+div.sec-one{
+  flex:1;
+  
+}
+
+div.sec-two{
+  flex:1;
+  
+}
+div.sec-three{
+  flex:1;
+}
+
+
+
+@media(max-width: 400px){
+  .THREE h1{
+  text-align: center;
+  font-size: 30px;
+}
+
+  
+}
+
+
+
+/***********************************/
+/*        SECTION 05: COPY3        */
+/***********************************/
+.mid-left  {
+  position: absolute;
+  top: 2500px;
+  left: 100px;
+  font-size: 60px;
+}
+
+.mid-left h1 {
+  font-size: 60px;
+  font-weight: 900;
+
+}
+
+.mid-left p {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+
+.copied{
+   box-shadow: 5px 10px 10px 10px #888888;
+   border-radius: 20px;
+}
+
+
+.mid-right  {
+  position: absolute;
+  top: 2600px;
+  right: 10px;
+  font-size: 60px;
+}
+
+.mid-right h1 {
+  font-size: 60px;
+  font-weight: 900;
+
+}
+
+.mid-right p {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+
+/************** FORM *********************/
+#form {
+  max-width: 700px;
+  padding: 2rem;
+  box-sizing: border-box;
+ background: white;
+ box-shadow: 5px 10px 10px 10px #888888;
+   border-radius: 20px;
+}
+
+.form-field {
+  display: flex;
+  margin: 0 0 1rem 0;
+}
+label, input {
+  width: 70%;
+  padding: 0.5rem;
+  box-sizing: border-box;
+  justify-content: space-between;
+  font-size: 1.1rem;
+}
+label {
+  text-align: right;
+  width: 30%;
+}
+input {
+  border: 2px solid #aaa;
+  border-radius: 2px;
+}
+
+
+
+/************** hide and show *********************/
+
+@media screen and (min-width: 0px) and (max-width: 1080px) {
+  #my-content { display: none; }  /* hide it elsewhere */
+
+}
+
+@media screen and (min-width: 1081px) and (max-width: 1200px) {
+  #my-content { display:block; }  /* show it on big screens */
+   
+}
+
+
+
+
+/****************************************/
+/*         SECTION 06: FOOTER         */
+/****************************************/
+
+.SECTION-6-main {
+  padding: 100px 0;
+  display: flex;
+  justify-content: space-evenly;
+  background-color: black;
+}
+
+.SECTION-6-main ul {
+  list-style: none;
+}
+
+.SECTION-6-main h1 {
+  font-size: 22px;
+  line-height: 117%;
+  color: white;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.SECTION-6-main h2 {
+  color:white;
+  font-weight: 900;
+  font-size: 30px;
+}
+
+.SECTION-6-main ul li a {
+  color: white;
+  text-decoration:none;
+}
+
+#SECTION-6 {
+  border-top: 1px solid #6EB981;
+  font-size: 17px;
+  padding: 15px 5px;
+  color: white;
+  text-align: center;
+}
+
+#footer a {
+  text-decoration: none;
+  color: white;
+}
+
+.contact-details {
+  margin-top: 20px;
+}
+
+.contact-details li {
+  list-style: none;
+  margin: 10px 0;
+}
+
+.contact-details li a {
+  text-decoration:none;
+  color: white;
+}
+
+.contact-details .fa {
+  color: #f1f1f1;
+  margin-right: 10px;
+}
+
+.social-cons{
+  padding:20px 0;
+}
+
+.social-cons .logosqure a{
+  padding:0 10px;
+  text-decoration:none;
+  color:white;
+  font-size:22px;
+}
+
+.serv ul li{
+  padding:5px 0;
+}
+
+@media only screen and (max-width: 749px) {
+  .SECTION-6-main {
+    padding:20px;
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+  }
+    .social-ico{
+      padding:20px 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .SECTION-6-main {
+    grid-template-columns: 1fr;
+  }
+  .social-cons{
+    padding:20px 0;
+  }
+  .serv{
+    padding:20px 0;
+  } 
+
+}
